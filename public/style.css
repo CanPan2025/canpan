@@ -128,7 +128,17 @@ body {
   font-size: 3rem;
   margin-bottom: 20px;
   color: var(--dark-text);
-  font-weight: 400;
+  font-weight: 400; /* Keep the overall heading not bold */
+}
+
+.green-text {
+  font-weight: 700;
+  color: #4caf50; /* Green color */
+}
+
+.orange-text {
+  font-weight: 700;
+  color: #ff9800; /* Orange color */
 }
 
 .hero-content p {
