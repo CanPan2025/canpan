@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanPan - Medical App</title>
+
+  <style>
+    /* Fallback styles in case CSS doesn't load */
+    body { background: #f5f5f5 !important; margin: 0; padding: 0; }
+    .navbar {
+      background: white !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+      position: fixed !important;
+      top: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+    }
+    .logo { color: #333 !important; }
+  </style>
+  <script type="module" crossorigin src="./public/index.js"></script>
+  <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+  <!-- Fixed navigation bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="./public/icon.png" onerror="this.style.display='none'" alt="CanPan Logo" class="logo-icon">
+        <span>CanPan</span>
+      </div>
+      <div class="nav-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#features" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Your Health Companion</h1>
+      <p>CanPan helps you manage your health with personalized insights and reminders.</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Our Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🩺</div>
+          <h3>Health Tracking</h3>
+          <p>Monitor your vital signs and health metrics in real-time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💊</div>
+          <h3>Medication Reminders</h3>
+          <p>Never miss a dose with personalized reminder notifications.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Health Analytics</h3>
+          <p>Gain insights into your health patterns with detailed analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About CanPan</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>CanPan is a revolutionary medical app designed to empower individuals to take control of their health. Our mission is to make healthcare accessible, personalized, and convenient for everyone.</p>
+          <p>With cutting-edge technology and a user-centric approach, CanPan bridges the gap between patients and healthcare providers.</p>
+        </div>
+        <div class="about-image">
+          <div class="placeholder-image"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Have questions or feedback? We'd love to hear from you.</p>
+          <div class="contact-details">
+            <p>📧 support@canpan.com</p>
+            <p>📞 +1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CanPan Medical App. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
